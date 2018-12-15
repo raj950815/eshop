@@ -1,0 +1,24 @@
+<section id="form"><!--form-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="signup-form"><!--sign up form-->
+          <h2>New Product!</h2>
+          <form [formGroup]="productForm" (ngSubmit)="saveProduct()">
+            <input type="text" formControlName="productName" name="productName" placeholder="productName"/>
+            <input type="text" formControlName="productCode" name="productCode" placeholder="productCode"/>
+            <input type="text" formControlName="category" name="category" placeholder="category"/>
+            <input type="text" formControlName="releaseDate" name="releaseDate" placeholder="releaseDate"/>
+            <input type="text" formControlName="price" name="price" placeholder="price"/>
+            <input type="text" formControlName="description" name="description" placeholder="description"/>
+            <input type="text" formControlName="starRating" name="starRating" placeholder="starRating"/>
+            <input type="text" formControlName="imageUrl" name="imageUrl" placeholder="imageUrl"/>
+            <button type="submit" class="btn btn-default">Save</button><br>
+            <button type="button" (click)="deleteProduct()" class="btn btn-default">Delete</button><br>
+            <button type="reset" class="btn btn-default">reset</button>
+            </form>
+        </div><!--/sign up form-->
+      </div>
+    </div>
+  </div>
+</section><!--/form-->
