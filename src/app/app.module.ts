@@ -57,7 +57,7 @@ import { CartComponent } from './product/cart.component';
     FormsModule,
     ReactiveFormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDympPt7CY5DkA6Z7v0WsJHMvsoJYBnYIQ'
+      apiKey: 'AIzaS'
     })
   ],
   providers: [
